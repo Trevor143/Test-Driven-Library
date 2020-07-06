@@ -17,7 +17,6 @@ class Book extends Model
     {
         $this->reservations()->create([
             'user_id' => $user->id,
-//            'book_id'=> $this->id,
             'checked_out_at'=> today(),
         ]);
     }
